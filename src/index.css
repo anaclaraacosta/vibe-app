@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  /* Font Family overrides */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Paytone One', sans-serif;
+
+  /* Custom Color Tokens matching VIBE Figma Designs */
+  --color-vibe-bg: #121411;
+  --color-vibe-card: #1a1a1a;
+  --color-vibe-volt: #c8f55a;
+  --color-vibe-border: #2a2a2a;
+  --color-vibe-gray: #666666;
+  --color-vibe-light-gray: #aaaaaa;
+  --color-vibe-offwhite: #f5f5f0;
+
+  /* Category colors */
+  --color-category-music: #c8f55a;
+  --color-category-cinema: #a78bfa;
+  --color-category-books: #fb923c;
+  --color-category-fashion: #f472b6;
+  --color-category-series: #34d399;
+  --color-category-destination: #60a5fa;
+}
+
+/* Custom global rules */
+body {
+  background-color: var(--color-vibe-bg);
+  color: var(--color-vibe-offwhite);
+  margin: 0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide scrollbar utility for clean mobile preview slides */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
